@@ -136,7 +136,7 @@ async def show_secret(call: types.CallbackQuery, callback_data : dict):
 
 		username = baza['user']
 		if username==call.from_user.username or sender==call.from_user.username:
-			await call.answer(f"{baza['text']}" , cache_time=10, show_alert=True)
+			await call.answer(f"{baza['text']}" , cache_time=1, show_alert=True)
 		else:
 			await call.answer(f"bu xabar siz uchun emas " , cache_time=10, show_alert=True)
 	else :
